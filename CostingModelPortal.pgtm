@@ -1,0 +1,3185 @@
+<Project version="20.5.0.7" edition="pro" localizationFileName="C:\Program Files (x86)\SQL Maestro Group\PHP Generator for MySQL Professional\lang.en.php" phpDriver="1" outputPath="Z:\www\marco\SupercareCostingModel\Portal" copySystemFiles="true" generateModifiedDataOnly="true" outputFilesExtension="php" colorSchemeName="cerulean">
+  <ConnectionOptions host="192.168.1.5" port="3306" login="server" password="V^K_JJBJJ=BQV+D~" database="sc_costingModel" client_encoding="utf8" allow_old_password="false">
+    <ssh_secure secure="false" port="22" authentication_mode="0"/>
+    <http_tunnel tunneling="false" url="">
+      <http_proxy_server use_proxy="false" port="8080"/>
+      <http_authentication/>
+    </http_tunnel>
+  </ConnectionOptions>
+  <ScriptConnectionOptions host="192.168.1.5" port="3306" login="server" password="V^K_JJBJJ=BQV+D~" database="sc_costingModel" client_encoding="utf8" allow_old_password="false">
+    <ssh_secure secure="false" port="22" authentication_mode="0"/>
+    <http_tunnel tunneling="false" url="">
+      <http_proxy_server use_proxy="false" port="8080"/>
+      <http_authentication/>
+    </http_tunnel>
+  </ScriptConnectionOptions>
+  <DataSources>
+    <DataSource name="attributes"/>
+    <DataSource name="client_industry"/>
+    <DataSource name="contract_duration"/>
+    <DataSource name="holidays"/>
+    <DataSource name="profit_center"/>
+    <DataSource name="region"/>
+    <DataSource name="role_rate"/>
+    <DataSource name="sales_division"/>
+    <DataSource name="sales_org"/>
+    <DataSource name="service_frequency"/>
+    <DataSource name="service_type"/>
+    <DataSource name="template"/>
+  </DataSources>
+  <Presentation disableMagicQuotesRuntime="false" showEnvironmentVariables="false" showExecutedQueries="false" showPHPErrorsAndWarnings="false">
+    <Pages>
+      <Page type="table" tableName="attributes" numberByDataSource="0" fileName="attributes" caption="Attributes" shortCaption="Attributes" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="Id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="Name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="Description" caption="Description" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="Value" caption="Value" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" numberAfterDecimal="4" decimalSeparator="." thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="Region" caption="Region" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="ValidFrom" caption="Valid From" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="ValidTill" caption="Valid Till" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="CreateDate" caption="Create Date" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="SalesDistrict" caption="Sales District" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="Id"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Value"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="ValidFrom"/>
+            <Column fieldName="ValidTill"/>
+            <Column fieldName="CreateDate"/>
+            <Column fieldName="SalesDistrict"/>
+          </List>
+          <View>
+            <Column fieldName="Id"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Value"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="ValidFrom"/>
+            <Column fieldName="ValidTill"/>
+            <Column fieldName="CreateDate"/>
+            <Column fieldName="SalesDistrict"/>
+          </View>
+          <Edit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="Name" visible="false"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Value"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="ValidFrom"/>
+            <Column fieldName="ValidTill"/>
+            <Column fieldName="CreateDate"/>
+            <Column fieldName="SalesDistrict"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Value"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="ValidFrom"/>
+            <Column fieldName="ValidTill"/>
+            <Column fieldName="CreateDate"/>
+            <Column fieldName="SalesDistrict"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="Id"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Value"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="ValidFrom"/>
+            <Column fieldName="ValidTill"/>
+            <Column fieldName="CreateDate"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="SalesDistrict"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="Id"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Value"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="ValidFrom"/>
+            <Column fieldName="ValidTill"/>
+            <Column fieldName="CreateDate"/>
+            <Column fieldName="SalesDistrict"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="Id"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Value"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="ValidFrom"/>
+            <Column fieldName="ValidTill"/>
+            <Column fieldName="CreateDate"/>
+            <Column fieldName="SalesDistrict"/>
+          </Print>
+          <Export>
+            <Column fieldName="Id"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Value"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="ValidFrom"/>
+            <Column fieldName="ValidTill"/>
+            <Column fieldName="CreateDate"/>
+            <Column fieldName="SalesDistrict"/>
+          </Export>
+          <Compare>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Value"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="ValidFrom"/>
+            <Column fieldName="ValidTill"/>
+            <Column fieldName="CreateDate"/>
+            <Column fieldName="SalesDistrict"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="Name" visible="false"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Value"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="ValidFrom"/>
+            <Column fieldName="ValidTill"/>
+            <Column fieldName="CreateDate"/>
+            <Column fieldName="SalesDistrict"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="client_industry" numberByDataSource="0" fileName="client_industry" caption="Client Industry" shortCaption="Client Industry" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="Id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="description" caption="Description" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="create_date" caption="Create Date" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </List>
+          <View>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </View>
+          <Edit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </Print>
+          <Export>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </Export>
+          <Compare>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="contract_duration" numberByDataSource="0" fileName="contract_duration" caption="Contract Duration" shortCaption="Contract Duration" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="duration" caption="Duration" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text"/>
+            <EditProperties type="textBox" maxLength="40"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="create_date" caption="Create Date" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id"/>
+            <Column fieldName="duration"/>
+            <Column fieldName="create_date"/>
+          </List>
+          <View>
+            <Column fieldName="id"/>
+            <Column fieldName="duration"/>
+            <Column fieldName="create_date"/>
+          </View>
+          <Edit>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="duration"/>
+            <Column fieldName="create_date"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="duration"/>
+            <Column fieldName="create_date"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id"/>
+            <Column fieldName="duration"/>
+            <Column fieldName="create_date"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id"/>
+            <Column fieldName="duration"/>
+            <Column fieldName="create_date"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id"/>
+            <Column fieldName="duration"/>
+            <Column fieldName="create_date"/>
+          </Print>
+          <Export>
+            <Column fieldName="id"/>
+            <Column fieldName="duration"/>
+            <Column fieldName="create_date"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="duration"/>
+            <Column fieldName="create_date"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="duration"/>
+            <Column fieldName="create_date"/>
+          </MultiEdit>
+        </Columns>
+        <Details>
+          <Detail caption="Quote">
+            <Page type="table" tableName="quote" numberByDataSource="0" fileName="quote" caption="Quote" shortCaption="Quote" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false">
+              <BeforeGridText/>
+              <DetailedDescription/>
+              <ColumnPresentations>
+                <ColumnPresentation fieldName="id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+                  <ViewProperties type="text">
+                    <Format type="number" thousandSeparator=","/>
+                  </ViewProperties>
+                  <EditProperties type="textBox" maxLength="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="quote_number" caption="Quote Number" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="10"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="client_order_no" caption="Client Order No" showColumnFilter="false" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="client_quote_no" caption="Client Quote No" showColumnFilter="false" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="client_order_date" caption="Client Order Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeKind="1"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="valid_from" caption="Valid From" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeKind="1"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="service_frequency" caption="Service Frequency" selectedFilterOperators="1589247">
+                  <Lookup tableName="service_frequency" linkFieldName="id" displayFieldName="frequency" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="contract_duration" caption="Contract Duration" selectedFilterOperators="1589247">
+                  <Lookup tableName="contract_duration" linkFieldName="id" displayFieldName="duration" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="site_quoted" caption="Site Quoted" selectedFilterOperators="1589247">
+                  <Lookup tableName="customer_site_quoted" linkFieldName="id" displayFieldName="site_name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="service_start_date" caption="Service Start Date" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sap_quote_no" caption="Sap Quote No" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="debtors_no" caption="Debtors No" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="contract_code" caption="Contract Code" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="j_number" caption="J Number" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="service_description" caption="Service Description" showColumnFilter="false" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="special_notes" caption="Special Notes" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="status" caption="Status" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="total_contract_price" caption="Total Contract Price" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1573119">
+                  <ViewProperties type="text">
+                    <Format type="number" numberAfterDecimal="4" decimalSeparator="." thousandSeparator=","/>
+                  </ViewProperties>
+                  <EditProperties type="textBox" maxLength="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_org" caption="Sales Org" canSetNull="true" selectedFilterOperators="1589247">
+                  <Lookup tableName="sales_org" linkFieldName="Id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_division" caption="Sales Division" canSetNull="true" selectedFilterOperators="1589247">
+                  <Lookup tableName="sales_division" linkFieldName="Id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="region" caption="Region" canSetNull="true" selectedFilterOperators="1589247">
+                  <Lookup tableName="region" linkFieldName="Id" displayFieldName="RegionName" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_district" caption="Sales District" canSetNull="true" selectedFilterOperators="1589247">
+                  <Lookup tableName="sales_district" linkFieldName="Id" displayFieldName="DistrictName" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_exec_code" caption="Sales Exec Code" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_exec_name" caption="Sales Exec Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="area_manager_code" caption="Area Manager Code" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="area_manager_name" caption="Area Manager Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="regional_manager_name" caption="Regional Manager Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="profit_center" caption="Profit Center" canSetNull="true" selectedFilterOperators="1589247">
+                  <Lookup tableName="profit_center" linkFieldName="Id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_stage" caption="Sales Stage" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="present_date" caption="Present Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeKind="1"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="award_date" caption="Award Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeKind="1"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="start_date" caption="Start Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeKind="1"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="created_by" caption="Created By" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1573119">
+                  <ViewProperties type="text">
+                    <Format type="number" thousandSeparator=","/>
+                  </ViewProperties>
+                  <EditProperties type="textBox" maxLength="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="last_updated_by" caption="Last Updated By" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1573119">
+                  <ViewProperties type="text">
+                    <Format type="number" thousandSeparator=","/>
+                  </ViewProperties>
+                  <EditProperties type="textBox" maxLength="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="upd_date" caption="Upd Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="create_date" caption="Create Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+              </ColumnPresentations>
+              <Columns>
+                <List>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </List>
+                <View>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </View>
+                <Edit>
+                  <Column fieldName="id" visible="false"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </Edit>
+                <Insert>
+                  <Column fieldName="id" visible="false"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </Insert>
+                <QuickFilter>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </QuickFilter>
+                <FilterBuilder>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </FilterBuilder>
+                <Print>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </Print>
+                <Export>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </Export>
+                <Compare>
+                  <Column fieldName="id" visible="false"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </Compare>
+                <MultiEdit>
+                  <Column fieldName="id" visible="false"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </MultiEdit>
+              </Columns>
+              <Details/>
+              <RecordPermissions useRecordPermissions="false"/>
+              <PartitionNavigators/>
+            </Page>
+            <MasterForeignKeyColumnMap>
+              <FieldMap masterColumnName="id" foreginColumnName="contract_duration"/>
+            </MasterForeignKeyColumnMap>
+          </Detail>
+        </Details>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="holidays" numberByDataSource="0" fileName="holidays" caption="Holidays" shortCaption="Holidays" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="Id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="description" caption="Description" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="holiday_date" caption="Holiday Date" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="valid_from" caption="Valid From" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="valid_till" caption="Valid Till" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="create_date" caption="Create Date" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="holiday_date"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </List>
+          <View>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="holiday_date"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </View>
+          <Edit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="holiday_date"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="holiday_date"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="holiday_date"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="holiday_date"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="holiday_date"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </Print>
+          <Export>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="holiday_date"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </Export>
+          <Compare>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="holiday_date"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="holiday_date"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="profit_center" numberByDataSource="0" fileName="profit_center" caption="Profit Center" shortCaption="Profit Center" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="Id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="description" caption="Description" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="sales_office" caption="Sales Office" canSetNull="true" selectedFilterOperators="1589247">
+            <Lookup tableName="region" linkFieldName="Id" displayFieldName="RegionName" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="dynamicCombobox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="sales_org" caption="Sales Org" canSetNull="true" selectedFilterOperators="1589247">
+            <Lookup tableName="sales_org" linkFieldName="Id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="dynamicCombobox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="sales_division" caption="Sales Division" canSetNull="true" selectedFilterOperators="1589247">
+            <Lookup tableName="sales_division" linkFieldName="Id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="dynamicCombobox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="is_active" caption="Is Active" canSetNull="true" selectedFilterOperators="1572867">
+            <ViewProperties type="checkBox" displayType="image"/>
+            <EditProperties type="checkBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="create_date" caption="Create Date" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="sales_office"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="sales_division"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="create_date"/>
+          </List>
+          <View>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="sales_office"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="sales_division"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="create_date"/>
+          </View>
+          <Edit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="sales_office"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="sales_division"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="create_date"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="sales_office"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="sales_division"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="create_date"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="sales_office"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="sales_division"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="create_date"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="sales_office"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="sales_division"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="create_date"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="sales_office"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="sales_division"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="create_date"/>
+          </Print>
+          <Export>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="sales_office"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="sales_division"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="create_date"/>
+          </Export>
+          <Compare>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="sales_office"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="sales_division"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="create_date"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="sales_office"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="sales_division"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="create_date"/>
+          </MultiEdit>
+        </Columns>
+        <Details>
+          <Detail caption="Quote">
+            <Page type="table" tableName="quote" numberByDataSource="0" fileName="quote" caption="Quote" shortCaption="Quote" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false">
+              <BeforeGridText/>
+              <DetailedDescription/>
+              <ColumnPresentations>
+                <ColumnPresentation fieldName="id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+                  <ViewProperties type="text">
+                    <Format type="number" thousandSeparator=","/>
+                  </ViewProperties>
+                  <EditProperties type="textBox" maxLength="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="quote_number" caption="Quote Number" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="10"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="client_order_no" caption="Client Order No" showColumnFilter="false" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="client_quote_no" caption="Client Quote No" showColumnFilter="false" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="client_order_date" caption="Client Order Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeKind="1"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="valid_from" caption="Valid From" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeKind="1"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="service_frequency" caption="Service Frequency" selectedFilterOperators="1589247">
+                  <Lookup tableName="service_frequency" linkFieldName="id" displayFieldName="frequency" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="contract_duration" caption="Contract Duration" selectedFilterOperators="1589247">
+                  <Lookup tableName="contract_duration" linkFieldName="id" displayFieldName="duration" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="site_quoted" caption="Site Quoted" selectedFilterOperators="1589247">
+                  <Lookup tableName="customer_site_quoted" linkFieldName="id" displayFieldName="site_name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="service_start_date" caption="Service Start Date" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sap_quote_no" caption="Sap Quote No" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="debtors_no" caption="Debtors No" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="contract_code" caption="Contract Code" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="j_number" caption="J Number" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="service_description" caption="Service Description" showColumnFilter="false" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="special_notes" caption="Special Notes" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="status" caption="Status" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="total_contract_price" caption="Total Contract Price" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1573119">
+                  <ViewProperties type="text">
+                    <Format type="number" numberAfterDecimal="4" decimalSeparator="." thousandSeparator=","/>
+                  </ViewProperties>
+                  <EditProperties type="textBox" maxLength="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_org" caption="Sales Org" canSetNull="true" selectedFilterOperators="1589247">
+                  <Lookup tableName="sales_org" linkFieldName="Id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_division" caption="Sales Division" canSetNull="true" selectedFilterOperators="1589247">
+                  <Lookup tableName="sales_division" linkFieldName="Id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="region" caption="Region" canSetNull="true" selectedFilterOperators="1589247">
+                  <Lookup tableName="region" linkFieldName="Id" displayFieldName="RegionName" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_district" caption="Sales District" canSetNull="true" selectedFilterOperators="1589247">
+                  <Lookup tableName="sales_district" linkFieldName="Id" displayFieldName="DistrictName" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_exec_code" caption="Sales Exec Code" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_exec_name" caption="Sales Exec Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="area_manager_code" caption="Area Manager Code" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="area_manager_name" caption="Area Manager Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="regional_manager_name" caption="Regional Manager Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="profit_center" caption="Profit Center" canSetNull="true" selectedFilterOperators="1589247">
+                  <Lookup tableName="profit_center" linkFieldName="Id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_stage" caption="Sales Stage" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="present_date" caption="Present Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeKind="1"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="award_date" caption="Award Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeKind="1"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="start_date" caption="Start Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeKind="1"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="created_by" caption="Created By" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1573119">
+                  <ViewProperties type="text">
+                    <Format type="number" thousandSeparator=","/>
+                  </ViewProperties>
+                  <EditProperties type="textBox" maxLength="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="last_updated_by" caption="Last Updated By" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1573119">
+                  <ViewProperties type="text">
+                    <Format type="number" thousandSeparator=","/>
+                  </ViewProperties>
+                  <EditProperties type="textBox" maxLength="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="upd_date" caption="Upd Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="create_date" caption="Create Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+              </ColumnPresentations>
+              <Columns>
+                <List>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </List>
+                <View>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </View>
+                <Edit>
+                  <Column fieldName="id" visible="false"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </Edit>
+                <Insert>
+                  <Column fieldName="id" visible="false"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </Insert>
+                <QuickFilter>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </QuickFilter>
+                <FilterBuilder>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </FilterBuilder>
+                <Print>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </Print>
+                <Export>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </Export>
+                <Compare>
+                  <Column fieldName="id" visible="false"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </Compare>
+                <MultiEdit>
+                  <Column fieldName="id" visible="false"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </MultiEdit>
+              </Columns>
+              <Details/>
+              <RecordPermissions useRecordPermissions="false"/>
+              <PartitionNavigators/>
+            </Page>
+            <MasterForeignKeyColumnMap>
+              <FieldMap masterColumnName="Id" foreginColumnName="profit_center"/>
+            </MasterForeignKeyColumnMap>
+          </Detail>
+        </Details>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="region" numberByDataSource="0" fileName="region" caption="Region" shortCaption="Region" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="Id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="RegionName" caption="Region Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="Description" caption="Description" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="Address" caption="Address" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="PostalAddress" caption="Postal Address" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="TelNum" caption="Tel Num" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="Email" caption="Email" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="Website" caption="Website" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="CreateDate" caption="Create Date" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="Id"/>
+            <Column fieldName="RegionName"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Address"/>
+            <Column fieldName="PostalAddress"/>
+            <Column fieldName="TelNum"/>
+            <Column fieldName="Email"/>
+            <Column fieldName="Website"/>
+            <Column fieldName="CreateDate"/>
+          </List>
+          <View>
+            <Column fieldName="Id"/>
+            <Column fieldName="RegionName"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Address"/>
+            <Column fieldName="PostalAddress"/>
+            <Column fieldName="TelNum"/>
+            <Column fieldName="Email"/>
+            <Column fieldName="Website"/>
+            <Column fieldName="CreateDate"/>
+          </View>
+          <Edit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="RegionName"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Address"/>
+            <Column fieldName="PostalAddress"/>
+            <Column fieldName="TelNum"/>
+            <Column fieldName="Email"/>
+            <Column fieldName="Website"/>
+            <Column fieldName="CreateDate"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="RegionName"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Address"/>
+            <Column fieldName="PostalAddress"/>
+            <Column fieldName="TelNum"/>
+            <Column fieldName="Email"/>
+            <Column fieldName="Website"/>
+            <Column fieldName="CreateDate"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="Id"/>
+            <Column fieldName="RegionName"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Address"/>
+            <Column fieldName="PostalAddress"/>
+            <Column fieldName="TelNum"/>
+            <Column fieldName="Email"/>
+            <Column fieldName="Website"/>
+            <Column fieldName="CreateDate"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="Id"/>
+            <Column fieldName="RegionName"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Address"/>
+            <Column fieldName="PostalAddress"/>
+            <Column fieldName="TelNum"/>
+            <Column fieldName="Email"/>
+            <Column fieldName="Website"/>
+            <Column fieldName="CreateDate"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="Id"/>
+            <Column fieldName="RegionName"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Address"/>
+            <Column fieldName="PostalAddress"/>
+            <Column fieldName="TelNum"/>
+            <Column fieldName="Email"/>
+            <Column fieldName="Website"/>
+            <Column fieldName="CreateDate"/>
+          </Print>
+          <Export>
+            <Column fieldName="Id"/>
+            <Column fieldName="RegionName"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Address"/>
+            <Column fieldName="PostalAddress"/>
+            <Column fieldName="TelNum"/>
+            <Column fieldName="Email"/>
+            <Column fieldName="Website"/>
+            <Column fieldName="CreateDate"/>
+          </Export>
+          <Compare>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="RegionName"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Address"/>
+            <Column fieldName="PostalAddress"/>
+            <Column fieldName="TelNum"/>
+            <Column fieldName="Email"/>
+            <Column fieldName="Website"/>
+            <Column fieldName="CreateDate"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="RegionName"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="Address"/>
+            <Column fieldName="PostalAddress"/>
+            <Column fieldName="TelNum"/>
+            <Column fieldName="Email"/>
+            <Column fieldName="Website"/>
+            <Column fieldName="CreateDate"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="role_rate" numberByDataSource="0" fileName="role_rate" caption="Role Rate" shortCaption="Role Rate" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="Id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="rate" caption="Rate" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" numberAfterDecimal="4" decimalSeparator="." thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="role" caption="Role" selectedFilterOperators="1589247">
+            <Lookup tableName="role" linkFieldName="Id" displayFieldName="RoleName" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="dynamicCombobox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="Region" caption="Region" canSetNull="true" selectedFilterOperators="1589247">
+            <Lookup tableName="region" linkFieldName="Id" displayFieldName="RegionName" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="dynamicCombobox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="SalesDistrict" caption="Sales District" canSetNull="true" selectedFilterOperators="1589247">
+            <Lookup tableName="sales_district" linkFieldName="Id" displayFieldName="DistrictName" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="dynamicCombobox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="valid_from" caption="Valid From" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="valid_till" caption="Valid Till" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="create_date" caption="Create Date" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="rate"/>
+            <Column fieldName="role"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="SalesDistrict"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </List>
+          <View>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="rate"/>
+            <Column fieldName="role"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="SalesDistrict"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </View>
+          <Edit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="rate"/>
+            <Column fieldName="role"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="SalesDistrict"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="rate"/>
+            <Column fieldName="role"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="SalesDistrict"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="rate"/>
+            <Column fieldName="role"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="SalesDistrict"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="rate"/>
+            <Column fieldName="role"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="SalesDistrict"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="rate"/>
+            <Column fieldName="role"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="SalesDistrict"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </Print>
+          <Export>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="rate"/>
+            <Column fieldName="role"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="SalesDistrict"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </Export>
+          <Compare>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="rate"/>
+            <Column fieldName="role"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="SalesDistrict"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="rate"/>
+            <Column fieldName="role"/>
+            <Column fieldName="Region"/>
+            <Column fieldName="SalesDistrict"/>
+            <Column fieldName="valid_from"/>
+            <Column fieldName="valid_till"/>
+            <Column fieldName="create_date"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="sales_division" numberByDataSource="0" fileName="sales_division" caption="Sales Division" shortCaption="Sales Division" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="Id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="description" caption="Description" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="create_date" caption="Create Date" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="sales_org" caption="Sales Org" canSetNull="true" selectedFilterOperators="1589247">
+            <Lookup tableName="sales_org" linkFieldName="Id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="dynamicCombobox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="is_active" caption="Is Active" canSetNull="true" selectedFilterOperators="1572867">
+            <ViewProperties type="checkBox" displayType="image"/>
+            <EditProperties type="checkBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="is_active"/>
+          </List>
+          <View>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="is_active"/>
+          </View>
+          <Edit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="is_active"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="is_active"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="is_active"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="is_active"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="is_active"/>
+          </Print>
+          <Export>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="is_active"/>
+          </Export>
+          <Compare>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="is_active"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+            <Column fieldName="sales_org"/>
+            <Column fieldName="is_active"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="sales_org" numberByDataSource="0" fileName="sales_org" caption="Sales Org" shortCaption="Sales Org" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="Id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="description" caption="Description" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="create_date" caption="Create Date" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </List>
+          <View>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </View>
+          <Edit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </Print>
+          <Export>
+            <Column fieldName="Id"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </Export>
+          <Compare>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="name"/>
+            <Column fieldName="description"/>
+            <Column fieldName="create_date"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="service_frequency" numberByDataSource="0" fileName="service_frequency" caption="Service Frequency" shortCaption="Service Frequency" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="frequency" caption="Frequency" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text"/>
+            <EditProperties type="textBox" maxLength="40"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="create_date" caption="Create Date" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id"/>
+            <Column fieldName="frequency"/>
+            <Column fieldName="create_date"/>
+          </List>
+          <View>
+            <Column fieldName="id"/>
+            <Column fieldName="frequency"/>
+            <Column fieldName="create_date"/>
+          </View>
+          <Edit>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="frequency"/>
+            <Column fieldName="create_date"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="frequency"/>
+            <Column fieldName="create_date"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id"/>
+            <Column fieldName="frequency"/>
+            <Column fieldName="create_date"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id"/>
+            <Column fieldName="frequency"/>
+            <Column fieldName="create_date"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id"/>
+            <Column fieldName="frequency"/>
+            <Column fieldName="create_date"/>
+          </Print>
+          <Export>
+            <Column fieldName="id"/>
+            <Column fieldName="frequency"/>
+            <Column fieldName="create_date"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="frequency"/>
+            <Column fieldName="create_date"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id" visible="false"/>
+            <Column fieldName="frequency"/>
+            <Column fieldName="create_date"/>
+          </MultiEdit>
+        </Columns>
+        <Details>
+          <Detail caption="Quote">
+            <Page type="table" tableName="quote" numberByDataSource="0" fileName="quote" caption="Quote" shortCaption="Quote" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false">
+              <BeforeGridText/>
+              <DetailedDescription/>
+              <ColumnPresentations>
+                <ColumnPresentation fieldName="id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+                  <ViewProperties type="text">
+                    <Format type="number" thousandSeparator=","/>
+                  </ViewProperties>
+                  <EditProperties type="textBox" maxLength="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="quote_number" caption="Quote Number" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="10"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="client_order_no" caption="Client Order No" showColumnFilter="false" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="client_quote_no" caption="Client Quote No" showColumnFilter="false" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="client_order_date" caption="Client Order Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeKind="1"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="valid_from" caption="Valid From" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeKind="1"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="service_frequency" caption="Service Frequency" selectedFilterOperators="1589247">
+                  <Lookup tableName="service_frequency" linkFieldName="id" displayFieldName="frequency" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="contract_duration" caption="Contract Duration" selectedFilterOperators="1589247">
+                  <Lookup tableName="contract_duration" linkFieldName="id" displayFieldName="duration" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="site_quoted" caption="Site Quoted" selectedFilterOperators="1589247">
+                  <Lookup tableName="customer_site_quoted" linkFieldName="id" displayFieldName="site_name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="service_start_date" caption="Service Start Date" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sap_quote_no" caption="Sap Quote No" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="debtors_no" caption="Debtors No" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="contract_code" caption="Contract Code" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="j_number" caption="J Number" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text"/>
+                  <EditProperties type="textBox" maxLength="40"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="service_description" caption="Service Description" showColumnFilter="false" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="special_notes" caption="Special Notes" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="status" caption="Status" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="total_contract_price" caption="Total Contract Price" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1573119">
+                  <ViewProperties type="text">
+                    <Format type="number" numberAfterDecimal="4" decimalSeparator="." thousandSeparator=","/>
+                  </ViewProperties>
+                  <EditProperties type="textBox" maxLength="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_org" caption="Sales Org" canSetNull="true" selectedFilterOperators="1589247">
+                  <Lookup tableName="sales_org" linkFieldName="Id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_division" caption="Sales Division" canSetNull="true" selectedFilterOperators="1589247">
+                  <Lookup tableName="sales_division" linkFieldName="Id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="region" caption="Region" canSetNull="true" selectedFilterOperators="1589247">
+                  <Lookup tableName="region" linkFieldName="Id" displayFieldName="RegionName" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_district" caption="Sales District" canSetNull="true" selectedFilterOperators="1589247">
+                  <Lookup tableName="sales_district" linkFieldName="Id" displayFieldName="DistrictName" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_exec_code" caption="Sales Exec Code" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_exec_name" caption="Sales Exec Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="area_manager_code" caption="Area Manager Code" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="area_manager_name" caption="Area Manager Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="regional_manager_name" caption="Regional Manager Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="profit_center" caption="Profit Center" canSetNull="true" selectedFilterOperators="1589247">
+                  <Lookup tableName="profit_center" linkFieldName="Id" displayFieldName="name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="dynamicCombobox"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="sales_stage" caption="Sales Stage" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+                  <ViewProperties type="text" maxLength="75"/>
+                  <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="present_date" caption="Present Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeKind="1"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="award_date" caption="Award Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeKind="1"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="start_date" caption="Start Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeKind="1"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="created_by" caption="Created By" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1573119">
+                  <ViewProperties type="text">
+                    <Format type="number" thousandSeparator=","/>
+                  </ViewProperties>
+                  <EditProperties type="textBox" maxLength="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="last_updated_by" caption="Last Updated By" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1573119">
+                  <ViewProperties type="text">
+                    <Format type="number" thousandSeparator=","/>
+                  </ViewProperties>
+                  <EditProperties type="textBox" maxLength="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="upd_date" caption="Upd Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+                <ColumnPresentation fieldName="create_date" caption="Create Date" canSetNull="true" selectedFilterOperators="2031871">
+                  <ViewProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s"/>
+                  <EditProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s" firstDayOfWeek="0"/>
+                </ColumnPresentation>
+              </ColumnPresentations>
+              <Columns>
+                <List>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </List>
+                <View>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </View>
+                <Edit>
+                  <Column fieldName="id" visible="false"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </Edit>
+                <Insert>
+                  <Column fieldName="id" visible="false"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </Insert>
+                <QuickFilter>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </QuickFilter>
+                <FilterBuilder>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </FilterBuilder>
+                <Print>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </Print>
+                <Export>
+                  <Column fieldName="id"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </Export>
+                <Compare>
+                  <Column fieldName="id" visible="false"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </Compare>
+                <MultiEdit>
+                  <Column fieldName="id" visible="false"/>
+                  <Column fieldName="quote_number"/>
+                  <Column fieldName="client_order_no"/>
+                  <Column fieldName="client_quote_no"/>
+                  <Column fieldName="client_order_date"/>
+                  <Column fieldName="valid_from"/>
+                  <Column fieldName="service_frequency"/>
+                  <Column fieldName="contract_duration"/>
+                  <Column fieldName="site_quoted"/>
+                  <Column fieldName="service_start_date"/>
+                  <Column fieldName="sap_quote_no"/>
+                  <Column fieldName="debtors_no"/>
+                  <Column fieldName="contract_code"/>
+                  <Column fieldName="j_number"/>
+                  <Column fieldName="service_description"/>
+                  <Column fieldName="special_notes"/>
+                  <Column fieldName="status"/>
+                  <Column fieldName="total_contract_price"/>
+                  <Column fieldName="sales_org"/>
+                  <Column fieldName="sales_division"/>
+                  <Column fieldName="region"/>
+                  <Column fieldName="sales_district"/>
+                  <Column fieldName="sales_exec_code"/>
+                  <Column fieldName="sales_exec_name"/>
+                  <Column fieldName="area_manager_code"/>
+                  <Column fieldName="area_manager_name"/>
+                  <Column fieldName="regional_manager_name"/>
+                  <Column fieldName="profit_center"/>
+                  <Column fieldName="sales_stage"/>
+                  <Column fieldName="present_date"/>
+                  <Column fieldName="award_date"/>
+                  <Column fieldName="start_date"/>
+                  <Column fieldName="created_by"/>
+                  <Column fieldName="last_updated_by"/>
+                  <Column fieldName="upd_date"/>
+                  <Column fieldName="create_date"/>
+                </MultiEdit>
+              </Columns>
+              <Details/>
+              <RecordPermissions useRecordPermissions="false"/>
+              <PartitionNavigators/>
+            </Page>
+            <MasterForeignKeyColumnMap>
+              <FieldMap masterColumnName="id" foreginColumnName="service_frequency"/>
+            </MasterForeignKeyColumnMap>
+          </Detail>
+        </Details>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="service_type" numberByDataSource="0" fileName="service_type" caption="Service Type" shortCaption="Service Type" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="Id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="Name" caption="Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="Description" caption="Description" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="CreateDate" caption="Create Date" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="Id"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="CreateDate"/>
+          </List>
+          <View>
+            <Column fieldName="Id"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="CreateDate"/>
+          </View>
+          <Edit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="CreateDate"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="CreateDate"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="Id"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="CreateDate"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="Id"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="CreateDate"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="Id"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="CreateDate"/>
+          </Print>
+          <Export>
+            <Column fieldName="Id"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="CreateDate"/>
+          </Export>
+          <Compare>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="CreateDate"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="Name"/>
+            <Column fieldName="Description"/>
+            <Column fieldName="CreateDate"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="template" numberByDataSource="0" fileName="template" caption="Template" shortCaption="Template" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="Id" caption="Id" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="template_name" caption="Template Name" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="template" caption="Template" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="externalFile"/>
+            <EditProperties type="fileUploadToFolder" acceptableFileTypes=".docx" directoryToUpload="../backend/docs/" generateRandomFileName="false" fileNameTemplate="%original_file_name%" replaceFilesIfExists="true" storeFileNameOnly="true"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="template_description" caption="Template Description" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="document_format" caption="Document Format" canSetNull="true" selectedFilterOperators="1589247">
+            <Lookup tableName="document_format" linkFieldName="Id" displayFieldName="format_name" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="dynamicCombobox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="created_date" caption="Created Date" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="upd_date" caption="Upd Date" canSetNull="true" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d H:i:s" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="is_active" caption="Is Active" canSetNull="true" selectedFilterOperators="1572867">
+            <ViewProperties type="checkBox" displayType="image"/>
+            <EditProperties type="checkBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="template_directory" caption="Template Directory" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="Id"/>
+            <Column fieldName="template_name"/>
+            <Column fieldName="template"/>
+            <Column fieldName="template_description"/>
+            <Column fieldName="document_format"/>
+            <Column fieldName="created_date"/>
+            <Column fieldName="upd_date"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="template_directory"/>
+          </List>
+          <View>
+            <Column fieldName="Id"/>
+            <Column fieldName="template_name"/>
+            <Column fieldName="template"/>
+            <Column fieldName="template_description"/>
+            <Column fieldName="document_format"/>
+            <Column fieldName="created_date"/>
+            <Column fieldName="upd_date"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="template_directory"/>
+          </View>
+          <Edit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="template_name"/>
+            <Column fieldName="template"/>
+            <Column fieldName="template_description"/>
+            <Column fieldName="document_format"/>
+            <Column fieldName="created_date"/>
+            <Column fieldName="upd_date"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="template_directory"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="template_name"/>
+            <Column fieldName="template"/>
+            <Column fieldName="template_description"/>
+            <Column fieldName="document_format"/>
+            <Column fieldName="created_date"/>
+            <Column fieldName="upd_date"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="template_directory"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="Id"/>
+            <Column fieldName="template_name"/>
+            <Column fieldName="template"/>
+            <Column fieldName="template_description"/>
+            <Column fieldName="document_format"/>
+            <Column fieldName="created_date"/>
+            <Column fieldName="upd_date"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="template_directory"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="Id"/>
+            <Column fieldName="template_name"/>
+            <Column fieldName="template"/>
+            <Column fieldName="template_description"/>
+            <Column fieldName="document_format"/>
+            <Column fieldName="created_date"/>
+            <Column fieldName="upd_date"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="template_directory"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="Id"/>
+            <Column fieldName="template_name"/>
+            <Column fieldName="template"/>
+            <Column fieldName="template_description"/>
+            <Column fieldName="document_format"/>
+            <Column fieldName="created_date"/>
+            <Column fieldName="upd_date"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="template_directory"/>
+          </Print>
+          <Export>
+            <Column fieldName="Id"/>
+            <Column fieldName="template_name"/>
+            <Column fieldName="template"/>
+            <Column fieldName="template_description"/>
+            <Column fieldName="document_format"/>
+            <Column fieldName="created_date"/>
+            <Column fieldName="upd_date"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="template_directory"/>
+          </Export>
+          <Compare>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="template_name"/>
+            <Column fieldName="template"/>
+            <Column fieldName="template_description"/>
+            <Column fieldName="document_format"/>
+            <Column fieldName="created_date"/>
+            <Column fieldName="upd_date"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="template_directory"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="Id" visible="false"/>
+            <Column fieldName="template_name"/>
+            <Column fieldName="template"/>
+            <Column fieldName="template_description"/>
+            <Column fieldName="document_format"/>
+            <Column fieldName="created_date"/>
+            <Column fieldName="upd_date"/>
+            <Column fieldName="is_active"/>
+            <Column fieldName="template_directory"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+    </Pages>
+    <UserAuthorization/>
+    <UserGrants enableGuestAccess="false">
+      <UserPageGrants/>
+    </UserGrants>
+    <Header/>
+    <Footer/>
+    <PHPOptions/>
+    <Groups>
+      <Group caption="No group"/>
+    </Groups>
+    <outgoingMailSettings mailer="0" fromEmail="" fromName=""/>
+  </Presentation>
+  <UserCSS/>
+  <PdfUserStyles/>
+  <PrintUserStyles/>
+  <UserJS/>
+  <ExcludedPaths/>
+  <DefaultPageProperties recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" useActionImages="true" showKeyColumnsImagesInGridHeader="false"/>
+  <DefaultDataFormats numberAfterDecimal="4" DecimalSeparator="." ThousandSeparator="," DateTimeFormat="Y-m-d H:i:s" DateFormat="Y-m-d" firstDayOfWeek="0"/>
+</Project>

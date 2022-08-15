@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@formulajs/formulajs": "^3.1.5",
+    "bootstrap": "^5.2.0",
+    "bootstrap-icons": "^1.9.1",
+    "excel-formula": "^1.5.0",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "tabulator-tables": "^5.3.1"
+  }
+}

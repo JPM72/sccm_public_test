@@ -1,0 +1,313 @@
+l[33mbed1dd2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel
+[33me5b07e9[m first commit
+[33m41bdaf7[m immediate emable SAP button on success
+[33m92587df[m execManDirBtn
+[33me8b4903[m add gm
+[33mc41328b[m add userId
+[33m767a41b[m try show error and change button on success
+[33md6a815d[m crgLoggedInUserId not defined fix?
+[33m611b70f[m nav.js
+[33m98c6f53[m add all files
+[33m27b948e[m add sales_district_sap to portal -> contract_duration
+[33m2c0fb77[m test qa
+[33m6daa84c[m test approve buttons on QA
+[33m420bc15[m common lib
+[33m08585ad[m revert setNewSite.php
+[33ma8f31a8[m add sales rep column
+[33m8a92b15[m add sigle quote filter
+[33m5639fef[m escape chars in postQuote.php
+[33m1c41175[m test
+[33me7901b5[m test
+[33me4c0d6e[m copy button css
+[33m58ec8fa[m fixed copy button on quotes page
+[33mbd66701[m version up
+[33m53e5f7e[m fix sales stages
+[33mec21f27[m revert quotes
+[33mbe7599d[m add sap quote number to list quotes, change to nav.js?
+[33m8756e5f[m save client details after sap post
+[33m665c345[m version up
+[33m10fc618[m add button forRuan
+[33m6605007[m version up
+[33m12df930[m toast close
+[33m37df925[m toast permanent
+[33m0ba3d53[m 1QT-
+[33m5d98b1f[m sales div code
+[33m36028b1[m empty sold to and shipped to
+[33m207a4c1[m check if code
+[33m5509cd1[m get sold to and shipped to from client/site name
+[33m23e0cf8[m moved out of loop
+[33mb327eac[m switch clientDataSheet.js and getMetadata.js
+[33m7f549ed[m make getmetadata faster?
+[33m3b53c7b[m moved out of loop
+[33md26eb0c[m remove invalid class
+[33m5ee1a51[m sap fieds are required to save
+[33m246dd4d[m sales dist is required
+[33mb18bab8[m cant save in view mode
+[33mf16d6df[m cant save in view mode
+[33md56755a[m move getMetadata.js back to clientdatasheet
+[33md257f73[m newroster
+[33mf361ec4[m template.js
+[33m7f38a46[m client data sheet to index.php
+[33mb951007[m client data sheet to index.php
+[33me9b1991[m client data sheet to index.php
+[33m117053d[m client data sheet to index.php
+[33m0bdb8b2[m comment out new roster
+[33mf8492c8[m comment out new roster
+[33m2bb0e7f[m version up
+[33m86c248b[m version up
+[33m8e5a747[m version up
+[33m096cf2a[m searhparams
+[33m48fe33c[m back
+[33mc2535ef[m clientSummary to index.php
+[33mdb403cb[m search params
+[33me28c32e[m search params
+[33m137e567[m search params
+[33m07b8058[m version up
+[33m78c0b48[m client data sheet
+[33mfe54d3c[m client data sheet
+[33md096356[m client data sheet
+[33md783fac[m client data sheet
+[33m014557e[m client data sheet
+[33m6984bda[m client data sheet
+[33m90a0133[m client data sheet
+[33m13bec4c[m get metadata error
+[33m773a828[m get metadata error
+[33m430f43f[m getMetadata
+[33me2a4ab6[m searchParams
+[33m7dc142f[m search params
+[33m4292d06[m test
+[33mff3b813[m frame 3
+[33m722be56[m version now
+[33m3e1463a[m getmetadata
+[33mfa704db[m allqoutes
+[33md60262e[m change quotes.html -> quotes.php
+[33m1f3cf03[m version up
+[33m2336e2d[m version up
+[33mad5ceb8[m version up
+[33m6b7e26f[m version up
+[33m52d51e1[m version up
+[33m02d00c7[m triggerCalcs
+[33m801db53[m change frame name
+[33m2a32371[m get SAP
+[33mefc59f8[m margin Anton
+[33m7f8126d[m try again
+[33m459aa43[m asdf
+[33mc868dee[m initial dropdown filter
+[33m7ccbcd2[m sort and cascade sap dropdowns
+[33mdd12222[m page cost -> body
+[33md04f4c1[m change SAP dropdowns to prod
+[33me71a935[m cost.js autoversioning
+[33m115413c[m roster.js auto versioning
+[33md2586ed[m roster version
+[33m005ed22[m all toLocaleString in roster
+[33ma2477e0[m Merge branch 'main' of github.com:CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m8016687[m toLocaleString fix
+[33maf823c2[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33md05d9c7[m ajust alignment of quoteInfo on top of pages
+[33md3663ca[m sames sales employee code for everyone
+[33mec490c8[m clean special chars
+[33mcc73a7f[m clean special chars
+[33m0456e63[m clean special chars
+[33m919bab1[m debug
+[33m30a70d0[m debug
+[33mc8aaa27[m debug
+[33mbff6e79[m debug
+[33m7da8b7b[m debug
+[33me507746[m debug
+[33m00d229a[m table to sc costingModel
+[33m4e7fedb[m table to sc costingModel
+[33m0c9ac41[m table to sc costingModel
+[33m6f8531a[m test on qa
+[33m18903bd[m test versioning
+[33ma52df6f[m revert script tags to individual html
+[33maf8b71d[m quotes.js up version
+[33m5fb6832[m index.html -> index.php
+[33mc8e186c[m remove clientName = bobs builders
+[33m4d1e639[m auto versioning
+[33mabb7bd0[m php self versioning
+[33m5e542af[m update version number
+[33mfec7c2b[m pa componnents error
+[33m38d4e62[m paComponenet error
+[33m346cf21[m add paComponents to database
+[33m98ff707[m remove comma
+[33mf706921[m change names
+[33m9256646[m add logged in first and last names
+[33m14672f0[m get post params - getUserRole
+[33m27c716f[m get username
+[33m41bced4[m add logged in user to quote
+[33m38247a1[m add our quote number
+[33mc5ebb81[m add margin bottom
+[33m211f6ee[m fix quote money format
+[33mbdaab2c[m nav version n
+[33m1618d29[m fix bug on deleting all rows in roster and then creating new line
+[33m3e3f533[m remove maxheight
+[33mdb5a4d6[m remove maxHeight
+[33mcb3f40e[m sap finish
+[33mc784885[m don't allow delete roster
+[33mf35519a[m Merge branch 'main' of github.com:CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33ma8447d5[m persist hourly Rate
+[33mc4604ef[m resolved merging issue in quote.js
+[33m581b92c[m new messages posted to top to fix portal navbar
+[33m90bca1a[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel
+[33m7090a4e[m fixed navbar issues on portal
+[33mb562b1e[m totallabourPlusSuper
+[33ma529c2c[m Merge branch 'main' of github.com:CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m01cf595[m roster no longer needs 0s
+[33meae77df[m fixed contract price format on quote view and removed navbar from quote view
+[33ma7dc4fd[m escaping apostrophe from customer and site search
+[33m455be65[m toFixed total contract price
+[33m63251c7[m version 3
+[33mf4ef1fa[m Merge branch 'main' of github.com:CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m4debcf1[m remove calculate summary code from cost sheet
+[33mc53917c[m fix template lits submit data sheet issue when in edit mode from view
+[33m98dbcc3[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel
+[33m56b83e2[m fix submit data sheet issue when in edit mode from view
+[33mc4b9c96[m fix error on error handler and use empty string as cost sheet if none
+[33mb475261[m back
+[33m9bd317e[m getMetadata version 2
+[33m621308e[m getMetadata.php path
+[33m935ee4f[m exec sum
+[33mfe7ceb5[m put back sum calc in cost.js
+[33me3d9906[m profit center bug
+[33md5fbb4e[m fix err
+[33m77d58bb[m calculate summary on change and recalc labour on old quote
+[33m5e78f51[m style fix
+[33m4d5ff27[m validate cost sheet profit center and region
+[33mf0749ef[m validate profit center
+[33m0ae88ea[m SAP
+[33m9f1047d[m postRosters return error 1
+[33m787cdc7[m removed a test line
+[33m679ea29[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m761bbdb[m changes to postCLientData
+[33mc4fa153[m save datasheet when edit or copy btn is clicked on list all quotes
+[33m42b1baa[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel
+[33mf8e0ee8[m copy quote function, allow to search via contract code, add auto complete
+[33mdec287b[m postRosters status
+[33md943cf7[m back
+[33mc70daac[m added alias for payment company name
+[33m099fe52[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel
+[33m3392947[m error msgs local
+[33m7ec208f[m error mgs and getQuoteData.php fix
+[33mde1913f[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m9f8f9db[m error mgs qa
+[33ma5aa8f0[m error msgs
+[33m235037e[m fixed postAddress script
+[33m26b7de2[m Merge branch 'main' of github.com:CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m1ef7337[m contract price onchange triggers clientSummary
+[33m7ef872c[m fixed submit quote error
+[33mb1d2927[m fix post quote error
+[33m1183f8e[m Merge branch 'main' of github.com:CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m8f40adb[m validate end date
+[33m465f209[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel
+[33m4f089e7[m change ui of window.errorMessage
+[33mecaf879[m Merge branch 'main' of github.com:CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m3ca4fbc[m portal
+[33mee3d13f[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel
+[33mf152d18[m fixed sorting bug on quotes datatables
+[33m5608f66[m Merge branch 'main' of github.com:CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33mdf7476f[m add zeros on paste fix
+[33mb72c8ca[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel
+[33m6efe227[m change profit centre to profit center
+[33m291f315[m nav link for allquotes
+[33mb8783a4[m resolved conflict in getMetaData.ja
+[33m246895d[m getMetaData update
+[33mabbb7a3[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel
+[33m60fe830[m working on listQuotes nav link
+[33m63668a5[m fix propper
+[33m763fd65[m Merge branch 'main' of github.com:CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33mf47fe80[m Merge branch 'AddEndDay' into main
+[33m82d24e6[m[33m ([m[1;31morigin/AddEndDay[m[33m)[m fixed :)
+[33m86f7270[m test. do not push
+[33m0475fb7[m fix view mode bug
+[33ma7d8198[m add client indutsry and reg number when posting a new customer
+[33m6593a0d[m add universal error message
+[33mb3f3c23[m markup
+[33ma139dd9[m beforeMerge
+[33me0c0c09[m markup r number
+[33m6cad540[m my sql lib
+[33m4a96158[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33md569ea2[m .
+[33m4d5cc1a[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m55e9e35[m update pat
+[33mb432c8f[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m5f17deb[m sales stages
+[33mdd1c24e[m change branch
+[33mfc2f97f[m add overtime and end day
+[33mc54beda[m roster
+[33mf022c3b[m add list quotes to navbar
+[33mb1776ab[m begin add end day
+[33mda1aa46[m datasheet nav bug fix
+[33m43e32b9[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33mbce40a7[m editQuote Fix
+[33m1103c99[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel
+[33md296fc3[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33mde1a2c9[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel
+[33m36a186f[m rosters servie validation
+[33m958118a[m fix overlay button for all quotes
+[33m160bd3f[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33ma41c15c[m add please select to roster
+[33mf4c4702[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m8bc7aab[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel
+[33mfd85dda[m fix editQuote function
+[33m3b3aa93[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m9fc0468[m Merge branch 'main' of github.com:CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m080b4dc[m roster save error
+[33m0cce7e2[m styling quote, fix editBtn bug behaviour
+[33mee17570[m fixed bug on all ote table
+[33m785b49c[m add line in getMetaData
+[33mf2996b1[m added customer name and site name name to getQuoteData
+[33m33ea109[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33mffbe117[m get edit quote to work
+[33m149d90e[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m61d5613[m jother2
+[33mba2c45f[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33md1653cd[m jother2
+[33m3b8647b[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m434dc5e[m Merge branch 'main' of github.com:CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33me0c30a6[m jOther
+[33md08cfb9[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33mf8c356d[m quick fix metadata.php
+[33md3028ad[m resolved conflicts in liblocal php
+[33m24edacd[m removed exits from liblocal file
+[33m5335143[m edit, view and copy buttons for all quotes table
+[33m1f0dc19[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m1069ee6[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel
+[33m675c19d[m added rand string to total column
+[33m3c8cae5[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33maf85640[m Merge branch 'main' of github.com:CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m224b369[m add special notes and service desc
+[33m892c52e[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m362231c[m rosters conflict fixed
+[33mb3e8f7f[m added column for list all quotes
+[33m839613b[m Merge branch 'main' of github.com:CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m4bd0394[m save markup per roster
+[33md295f86[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m7809cc1[m updateSaleStages query
+[33m84d28ec[m changes crgMySqlLib
+[33m7f36e2e[m updateSaleStages
+[33m700dc9f[m fixed merged conflict
+[33mb831032[m edit button on all quotes table
+[33m7d97a3d[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m2513a07[m service_price column
+[33m567e2ca[m remove second getMetadata call
+[33md6d2f77[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33mcd6b283[m getMetadatpath
+[33mb5ea886[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33mf27ae2c[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel
+[33m8e4ec37[m fix bugs on qoute
+[33m2a0ab8d[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m20d6e91[m quote num - client
+[33m908c336[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m49589ac[m metro rural onchange
+[33m4da5c21[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33me309c84[m v2
+[33m3e4b7be[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m27f9935[m no cache
+[33m5048dbc[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m375aa1e[m add onchange to trigger calcs
+[33mba0f4c1[m Merge branch 'main' of https://github.com/CorporateRenaissanceGroupSA/SupercareCostingModel into main
+[33m9b3d017[m ignore docs
+[33m77f4691[m delete docs
+[33ma8636d7[m metro rural onchange
+[33mb5964d6[m ignore docs
+[33m70a5cd7[m Merge branch 'main' of github.com:CorporateRenaissanceGroupSA/SupercareCostingModel into main

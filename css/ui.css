@@ -1,0 +1,186 @@
+html {
+    margin-left: calc(100vw - 100%);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body {
+    text-rendering: geometricPrecision;
+    overflow: hidden;
+    background-color: #1d1e22;
+    color: white;
+}
+
+
+#nav-header {
+    max-height: 48px;
+    background: #121212;
+}
+
+#ctn-body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ctn-main {
+    position: relative;
+    left: 0px;
+    /* top: 48px; */
+    top: 0px;
+    min-width: 100vw;
+    max-height: calc(100vh - 72px);
+    /* padding-bottom: 48px; */
+    /* overflow-y: scroll; */
+    /* background-color: var(--bs-gray-400); */
+    /* background-color: #202020; */
+    background-color: white;
+    /* overflow-x: hidden; */
+}
+
+#ctn-content {
+    width: 100vw;
+    /* height: calc(100vh - 96px); */
+    max-height: calc(100vh - 72px);
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden; */
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: white;
+    font-weight: bold;
+    background-color: var(--bs-nav-pills-link-active-bg);
+}
+
+#nav-header {
+    height: 48px;
+    background: #060606;
+}
+
+li.nav-item {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border-radius: var(--bs-btn-border-radius);
+    --bs-btn-border-width: 0px;
+    user-select: none;
+    border: none;
+}
+
+a.nav-link {
+    transition: color .15s ease-in-out, background- color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+#nav-footer {
+    height: 48px;
+    height: 38px;
+    min-height: 28px;
+    background: #1b1b1b;
+    width: 100vw;
+}
+
+#nav-footer li.nav-item {
+    border-right: 1px solid #6c757d;
+    border-right-style: inset;
+}
+
+#nav-footer button.nav-link {
+    height: 48px;
+    height: 38px;
+    min-height: 28px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    /* color: white !important; */
+    color: rgba(255, 255, 255, 0.65);
+}
+#nav-footer button.nav-link.active {
+    border-bottom: 4px solid #FE5000;
+    border-bottom-style: inset;
+    color: white !important;
+}
+
+div.toast-container {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+}
+
+.bg-orange {
+    background-color: #FE5000 !important;
+}
+
+label.form-label-snug {
+    font-size: 0.75rem;
+    user-select: none;
+    color: #6c757d;
+    margin-bottom: 0px;
+    margin-left: 0.25rem;
+}
+
+.ui_input-focus_indicator {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    pointer-events: none;
+}
+
+@keyframes ui_input-anim__focus_indicator_focusin {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.ui_input-focus_indicator_focusin {
+    width: 100%;
+    animation: ui_input-anim__focus_indicator_focusin .3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scaleX(1);
+}
+
+@keyframes ui_input-anim__focus_indicator_focusout {
+    from {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scaleX(1);
+    }
+}
+
+.ui_input-focus_indicator_focusout {
+    width: 100%;
+    animation: ui_input-anim__focus_indicator_focusout .3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scaleX(0);
+}
+
+.ui_input-anim__autochange {
+    animation-duration: 1s;
+    animation-name: ui_input-anim__autochange;
+}
+
+@keyframes ui_input-anim__autochange {
+    from {
+        background-color: rgb(204, 224, 255);
+    }
+
+    to {
+        background-color: rgba(255, 255, 255, 1);
+    }
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		@import url('./node_modules/bootstrap/dist/css/bootstrap.min.css');
+		@import url('./node_modules/bootstrap-icons/font/bootstrap-icons.css');
+		@import url('./node_modules/tabulator-tables/dist/css/tabulator.css');
+		@import url('./node_modules/tabulator-tables/dist/css/tabulator_simple.css');
+		@import url('./css/ui.css');
+		@import url('./css/tabulator_overrides.css');
+	</style>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/lodash/lodash.js"></script>
+	<script src="node_modules/excel-formula/dist/excel-formula.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="node_modules/tabulator-tables/dist/js/tabulator.js"></script>
+	<title>Document</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark p-0 shadow" aria-label="nav-header">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="/img/supercare_logo_circle_bg_white_transparent.png" alt="" width="32" height="32">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+				aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsExample04">
+				<ul class="navbar-nav me-auto mb-2 mb-md-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+							aria-expanded="false">SAP</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Output</a></li>
+							<li><a class="dropdown-item" href="#">Sapped By</a></li>
+							<li><a class="dropdown-item" href="#">SAP</a></li>
+							<li><a class="dropdown-item fw-bold" href="#">Logon</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid px-0 position-relative" id="ctn-main">
+		<div id="ctn-content">
+			<div class="row">
+				<div class="col-12" id="ctn-content-col"></div>
+			</div>
+			<div class="row overflow-y-scroll" style="margin-bottom: 38px;">
+				<div class="col-12">
+					<div class="table-responsive" style="overflow-y: scroll; font-size: 14px;">
+						<table class="table table-sm">
+							<thead class="table-dark">
+								<tr>
+									<th scope="col">DS hrs per Sun</th>
+									<th scope="col">Staff per Sun</th>
+									<th scope="col">DS Sun Hrs</th>
+									<th scope="col">Staff with Sun</th>
+									<th scope="col">Avg Sun hrs</th>
+									<th scope="col">Staff with OT</th>
+									<th scope="col">Avg ST rate</th>
+									<th scope="col">Avg OT ea</th>
+									<th scope="col">DS OT</th>
+									<th scope="col">OT Base</th>
+									<th scope="col">Avg OT rate</th>
+									<th scope="col">PH Base</th>
+									<th scope="col">Staff with PH</th>
+									<th scope="col">DS PH</th>
+									<th scope="col">Avg PH rate</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+								</tr>
+								<tr>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+								</tr>
+								<tr>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+								</tr>
+								<tr>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+								</tr>
+								<tr>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+								</tr>
+								<tr>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+								</tr>
+								<tr>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+								</tr>
+								<tr>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+								</tr>
+								<tr>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+								</tr>
+								<tr>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+								</tr>
+								<tr>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<ul class="nav nav-pills nav-justified fixed-bottom border-top bg-dark text-white" id="nav-footer" role="tablist"
+		style="--bs-nav-pills-link-active-bg: #000;">
+		<li class="nav-item" role="presentation">
+			<button class="nav-link active rounded-0" id="pills-home-tab" data-bs-toggle="pill"
+				data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+				aria-selected="true">DS</button>
+		</li>
+		<li class="nav-item text-nowrap" role="presentation">
+			<button class="nav-link rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+				type="button" role="tab" aria-controls="pills-home" aria-selected="true">SS</button>
+		</li>
+		<li class="nav-item text-nowrap" role="presentation">
+			<button class="nav-link rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+				type="button" role="tab" aria-controls="pills-home" aria-selected="true">NS</button>
+		</li>
+		<li class="nav-item text-nowrap" role="presentation">
+			<button class="nav-link rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+				type="button" role="tab" aria-controls="pills-home" aria-selected="true">TLDS</button>
+		</li>
+		<li class="nav-item text-nowrap" role="presentation">
+			<button class="nav-link rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+				type="button" role="tab" aria-controls="pills-home" aria-selected="true">TLSS</button>
+		</li>
+		<li class="nav-item text-nowrap" role="presentation">
+			<button class="nav-link rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+				type="button" role="tab" aria-controls="pills-home" aria-selected="true">TINS</button>
+		</li>
+		<li class="nav-item text-nowrap" role="presentation">
+			<button class="nav-link rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+				type="button" role="tab" aria-controls="pills-home" aria-selected="true">S&CMan</button>
+		</li>
+		<li class="nav-item text-nowrap" role="presentation">
+			<button class="nav-link rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+				type="button" role="tab" aria-controls="pills-home" aria-selected="true">Cost</button>
+		</li>
+		<li class="nav-item text-nowrap" role="presentation">
+			<button class="nav-link rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+				type="button" role="tab" aria-controls="pills-home" aria-selected="true">Labour Costs</button>
+		</li>
+		<li class="nav-item text-nowrap" role="presentation">
+			<button class="nav-link rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+				type="button" role="tab" aria-controls="pills-home" aria-selected="true">ExSum</button>
+		</li>
+		<li class="nav-item text-nowrap" role="presentation">
+			<button class="nav-link rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+				type="button" role="tab" aria-controls="pills-home" aria-selected="true">MD View</button>
+		</li>
+		<li class="nav-item text-nowrap" role="presentation">
+			<button class="nav-link rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+				type="button" role="tab" aria-controls="pills-home" aria-selected="true">VI</button>
+		</li>
+		<li class="nav-item text-nowrap" role="presentation">
+			<button class="nav-link rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+				type="button" role="tab" aria-controls="pills-home" aria-selected="true">Helicopter</button>
+		<li class="nav-item text-nowrap" role="presentation">
+			<button class="nav-link rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+				type="button" role="tab" aria-controls="pills-home" aria-selected="true">Transfer</button>
+		</li>
+		<li class="nav-item text-nowrap" role="presentation">
+			<button class="nav-link rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+				type="button" role="tab" aria-controls="pills-home" aria-selected="true">197 Allowances</button>
+		</li>
+		<li class="nav-item text-nowrap" role="presentation">
+			<button class="nav-link rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+				type="button" role="tab" aria-controls="pills-home" aria-selected="true">CCopy</button>
+		</li>
+	</ul>
+</body>
+<script type="module">
+	import * as Main from './index.js';
+	$(() =>
+	{
+		Main.init();
+	});
+</script>
+
+</html>

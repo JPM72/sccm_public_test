@@ -1,0 +1,5 @@
+frontend/js/lib/config.js
+backend/php/logs/
+backend/php/config.php
+*.log
+Portal/phpgen_settings.php

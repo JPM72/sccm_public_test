@@ -1,0 +1,27 @@
+div.RosterCostTable-ctn {
+	position: relative;
+}
+
+.tabulator .tabulator-header {
+	font-weight: normal;
+}
+.tabulator-row {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5)
+}
+/* .tabulator .tabulator-tableholder {
+	font-size: 12px;
+} */
+
+.tabulator .tabulator-header .tabulator-col.roster-lastGroupColumn {
+	border-right: 1px solid #212529;
+}
+.tabulator .tabulator-row .tabulator-cell.roster-lastGroupColumn {
+	border-right: 1px solid #212529;
+}
+.tabulator-row {
+	border-bottom: 1px initial rgba(255, 255, 255, 0) !important;
+}
+
+.tabulator .tabulator-row .roster-day-cell.tabulator-cell.tabulator-editable {
+	background-color: #a5e6f0ff;
+}
